@@ -8,13 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundSize: {
-        'size-200': '200% 100%'
-      },
-      backgroundPosition: {
-        'pos-0': '0% 100%',
-        'pos-100': '100%'
-      },
       fontFamily: {
         sans: ['Libre Franklin', ...defaultTheme.fontFamily.sans]
       },
@@ -31,11 +24,7 @@ module.exports = {
           10: '#0415141A',
           5: '#0415140D'
         },
-        error: '#D11A0F',
-        gradient: {
-          via: '#9658B5 50%',
-          to: '#041514E6 50%'
-        }
+        error: '#D11A0F'
       },
       letterSpacing: {
         default: '7.5%'

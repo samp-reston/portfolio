@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 
 const ContactForm: FunctionComponent = () => {
   return (
-    <form id="contact" className='flex flex-col gap-4 grow text-p'>
+    <form className='flex flex-col gap-4 grow text-p'>
       <div className='flex flex-col'>
         <label htmlFor="name">Name</label>
         <input id="name" type="text" className='border-4 border-secondary bg-black-75 rounded-lg h-12 text-white focus:outline-none p-1 '/>
