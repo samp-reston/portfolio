@@ -15,12 +15,22 @@ module.exports = {
         primary: '#4C93E6',
         secondary: '#9658B5',
         base: '#826ECB',
-        text: '#0D2128'
+        black: {
+          100: '#041514',
+          90: '#041514E6',
+          75: '#041514BF',
+          50: '#04151480',
+          25: '#04151440',
+          10: '#0415141A',
+          5: '#0415140D'
+        },
+        error: '#D11A0F'
       },
       letterSpacing: {
         default: '7.5%'
       },
       fontSize: {
+        socials: ['48px'],
         nav: ['21px', {
           letterSpacing: '0.075em'
         }],
