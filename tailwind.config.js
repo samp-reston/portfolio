@@ -31,6 +31,7 @@ module.exports = {
       },
       fontSize: {
         socials: ['48px'],
+        'socials-mobile': ['40px'],
         nav: ['21px', {
           letterSpacing: '0.075em'
         }],
@@ -59,6 +60,34 @@ module.exports = {
           fontWeight: 'bold'
         }],
         p: ['21px', {
+          lineHeight: '31.5px',
+          fontWeight: 'regular'
+        }],
+        'h1-mobile': ['51px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'bold'
+        }],
+        'h2-mobile': ['41px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'bold'
+        }],
+        'h3-mobile': ['33px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'light'
+        }],
+        'h4-mobile': ['26px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'bold'
+        }],
+        'h5-mobile': ['21px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'bold'
+        }],
+        'h6-mobile': ['16.8px', {
+          letterSpacing: '0.05em',
+          fontWeight: 'bold'
+        }],
+        'p-mobile': ['16.8px', {
           lineHeight: '31.5px',
           fontWeight: 'regular'
         }]

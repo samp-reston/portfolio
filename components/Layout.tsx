@@ -9,7 +9,7 @@ type PropTypes = {
 
 const Layout: FunctionComponent<PropTypes> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-primary to-base flex flex-col items-start 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 gap-4 pb-16 min-w-full transition-all ease-linear duration-300">
+    <div className="relative min-h-screen bg-gradient-to-b break-words from-primary to-base flex flex-col items-start gap-28">
       <Header />
       <main>{children}</main>
       <Footer />
