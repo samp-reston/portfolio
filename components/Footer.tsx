@@ -1,20 +1,17 @@
 import React, { FunctionComponent } from 'react'
 
-import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/Si'
+import ContactForm from './ContactForm'
+import Info from './Info'
 
 const Footer: FunctionComponent = () => {
-  const email: string = 'samp.reston@outlook.com'
   return (
-    <footer className='flex flex-col gap-8 pt-16 sm:pt-0 sm:pl-16'>
-      <p className='text-black-90 text-p'>Designed and Built by Samuel Preston</p>
-      <p className='text-black-90 text-p'><a href={`emailto:${email}`}>{email}</a></p>
-      <ul className='flex flex-row gap-6 text-socials text-black-90'>
-        <li><SiGithub /></li>
-        <li><SiLinkedin /></li>
-        <li><SiTwitter /></li>
-      </ul>
-      <p className='text-black-90 text-p'>&copy; Samuel Preston 2022</p>
-    </footer>
+    <>
+      <h1 className='text-h1 text-black-90'>Contact Me</h1>
+      <div className="flex md:flex-row flex-col divide-black-90 gap-8 md:divide-x-2 divide-y-2 md:divide-y-0 w-full">
+        <ContactForm />
+        <Info />
+      </div>
+    </>
   )
 }
 
