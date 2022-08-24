@@ -11,10 +11,10 @@ const Header: FunctionComponent = () => {
           <li className='flex'>
             <a href='/#'><img className='w-20 h-20' src={logo.src} alt="Logo"/></a>
           </li>
-          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary'><a href='/#my-skills'>My Skills</a></li>
-          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary'><a href='/#recent-work'>Recent Work</a></li>
-          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary'><a href='/#about-me'>About Me</a></li>
-          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary'><a href='/#contact'>Contact</a></li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary transition-all duration-200'><a href='/#my-skills'>My Skills</a></li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary transition-all duration-200'><a href='/#recent-work'>Recent Work</a></li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary transition-all duration-200'><a href='/#about-me'>About Me</a></li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-black-90 hover:text-secondary transition-all duration-200'><a href='/#contact'>Contact</a></li>
         </ul>
       </nav>
     </header>
