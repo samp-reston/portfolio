@@ -11,10 +11,10 @@ const Navbar = () => {
           <li className='flex'>
             <img className='w-20 h-20' src={logo.src} alt="Logo"/>
           </li>
-          <li className='sm:flex hidden font-medium text-nav text-text'>My Skills</li>
-          <li className='sm:flex hidden font-medium text-nav text-text'>Recent Work</li>
-          <li className='sm:flex hidden font-medium text-nav text-text'>About Me</li>
-          <li className='sm:flex hidden font-medium text-nav text-text'>Contact</li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-text'>My Skills</li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-text'>Recent Work</li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-text'>About Me</li>
+          <li className='flex sm:w-auto w-0 overflow-hidden font-medium text-nav text-text'>Contact</li>
         </ul>
       </nav>
     </header>
