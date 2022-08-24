@@ -3,7 +3,7 @@ import React from 'react'
 
 import logo from '../assets/logo.png'
 
-const Navbar = () => {
+const Header = () => {
   return (
     <header className='w-full'>
       <nav className='flex flex-row w-full'>
@@ -21,4 +21,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Header
