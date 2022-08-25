@@ -3,7 +3,7 @@ import portrait from '../assets/portrait.webp'
 
 const Hero: FunctionComponent = () => {
   return (
-    <div className='flex flex-col xl:w-5/6 w-full 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 pb-16 min-w-full transition-all ease-linear duration-300 gap-8'>
+    <div className='flex flex-col xl:w-5/6 w-full 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 min-w-full transition-all ease-linear duration-300 gap-8'>
       <div className='flex flex-col'>
         <h1 className='md:text-h1 text-h1-mobile text-black-90'>Samuel Preston</h1>
         <h3 className='md:text-h3 text-h3-mobile text-black-90'>Freelance Web Developer</h3>
