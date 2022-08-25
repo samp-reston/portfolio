@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        body: '10.67%'
+        body: '10.67%',
+        header: '3.3%'
       },
       screens: {
         xs: '320px'

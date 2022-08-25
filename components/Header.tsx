@@ -8,7 +8,7 @@ const Header: FunctionComponent = () => {
   return (
     <header className='min-w-full px-body transition-all duration-300 ease-linear '>
       <nav className='flex w-full flex-row'>
-        <ul className='flex h-24 w-full flex-row items-center justify-center sm:justify-between'>
+        <ul className='flex h-24 w-full flex-row items-center justify-center sm:justify-start sm:gap-header'>
           <li className='flex hover:cursor-pointer'>
             <Link href='/#'><Image width={80} height={80} src={logo.src} alt="Logo" layout='fixed'/></Link>
           </li>
