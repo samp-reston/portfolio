@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        body: '10.67%'
+      },
       screens: {
         xs: '320px'
       },
@@ -72,6 +75,9 @@ module.exports = {
         testimonial: ['21px', {
           lineHeight: '31.5px',
           fontWeight: 'extra-light'
+        }],
+        'nav-mobile': ['16.8px', {
+          letterSpacing: '0.075em'
         }],
         'h1-mobile': ['51px', {
           letterSpacing: '0.05em',

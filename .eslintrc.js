@@ -7,7 +7,8 @@ module.exports = {
     'plugin:react/recommended',
     'standard-with-typescript',
     'next/core-web-vitals',
-    'eslint:recommended'
+    'eslint:recommended',
+    'plugin:tailwindcss/recommended'
   ],
   overrides: [
   ],
@@ -17,7 +18,8 @@ module.exports = {
     project: ['./tsconfig.json']
   },
   plugins: [
-    'react'
+    'react',
+    'tailwindcss'
   ],
   rules: {
   },

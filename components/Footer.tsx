@@ -5,9 +5,9 @@ import Info from './Info'
 
 const Footer: FunctionComponent = () => {
   return (
-    <div className='xl:w-5/6 w-full 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 pt-12 min-w-full transition-all ease-linear duration-300'>
-      <h1 id="contact" className='md:text-h1 text-h1-mobile text-black-90'>Contact</h1>
-      <div className="flex md:flex-row flex-col divide-black-90 gap-8 md:divide-x-2 divide-y-2 md:divide-y-0 w-full">
+    <div className='w-full min-w-full px-body pt-12 transition-all duration-300 ease-linear xl:w-5/6'>
+      <h1 id="contact" className='text-h1-mobile text-black-90 md:text-h1'>Contact</h1>
+      <div className="flex w-full flex-col gap-8 divide-y-2 divide-black-90 md:flex-row md:divide-x-2 md:divide-y-0">
         <ContactForm />
         <Info />
       </div>

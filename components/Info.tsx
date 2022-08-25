@@ -8,16 +8,16 @@ const Info: FunctionComponent = () => {
   const twitterLink: string = 'https://twitter.com/samp_reston'
 
   return (
-    <footer className='flex flex-col gap-8 pt-8 md:pt-0 md:pl-8 grow md:w-min'>
-      <p className='text-black-90 md:text-p text-p-mobile'>Designed and Built by Samuel Preston</p>
-      <p className='text-black-90 md:text-p text-p-mobile hover:text-primary transition-all duration-200'><a href={`mailto:${email}`}>{email}</a></p>
-      <p className='text-black-90 md:text-p text-p-mobile hover:text-primary transition-all duration-200'><a href="tel:+447949420516">+44 794 9420 516</a></p>
-      <ul className='flex flex-row gap-6 md:text-socials text-socials-mobile text-black-90 grow'>
-        <li><a title="GitHub" className='hover:text-secondary overflow-hidden transition-all duration-200' href={githubLink}><SiGithub /></a></li>
-        <li><a title="LinkedIn" className='hover:text-secondary overflow-hidden transition-all duration-200' href={linkedinLink}><SiLinkedin /></a></li>
-        <li><a title="Twitter" className='hover:text-secondary overflow-hidden transition-all duration-200' href={twitterLink}><SiTwitter /></a></li>
+    <footer className='flex grow flex-col gap-8 pt-8 md:w-min md:pt-0 md:pl-8'>
+      <p className='text-p-mobile text-black-90 md:text-p'>Designed and Built by Samuel Preston</p>
+      <p className='text-p-mobile text-black-90 transition-all duration-200 hover:text-primary md:text-p'><a href={`mailto:${email}`}>{email}</a></p>
+      <p className='text-p-mobile text-black-90 transition-all duration-200 hover:text-primary md:text-p'><a href="tel:+447949420516">+44 794 9420 516</a></p>
+      <ul className='flex grow flex-row gap-6 text-socials-mobile text-black-90 md:text-socials'>
+        <li><a title="GitHub" className='overflow-hidden transition-all duration-200 hover:text-secondary' href={githubLink}><SiGithub /></a></li>
+        <li><a title="LinkedIn" className='overflow-hidden transition-all duration-200 hover:text-secondary' href={linkedinLink}><SiLinkedin /></a></li>
+        <li><a title="Twitter" className='overflow-hidden transition-all duration-200 hover:text-secondary' href={twitterLink}><SiTwitter /></a></li>
       </ul>
-      <p className='text-black-90 md:text-p text-p-mobile'>&copy; Samuel Preston 2022</p>
+      <p className='text-p-mobile text-black-90 md:text-p'>&copy; Samuel Preston 2022</p>
     </footer>
   )
 }
