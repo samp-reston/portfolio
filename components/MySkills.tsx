@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import { SiReact, SiNextdotjs, SiTailwindcss, SiPrisma, SiMysql, SiGithub, SiTypescript, SiPython } from 'react-icons/Si'
-import SimpleIconsTrpc from './SimpleIconsTrpc'
+import SimpleIconsTrpc from '../icons/SimpleIconsTrpc'
 
 const MySkills: FunctionComponent = () => {
   const reactLink: string = 'https://reactjs.org/'
