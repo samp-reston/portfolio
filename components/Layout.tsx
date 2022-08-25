@@ -1,11 +1,11 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent } from 'react'
 
 import Header from './Header'
 import Footer from './Footer'
 
-type PropTypes = {
-  children: React.ReactNode;
-};
+interface PropTypes {
+  children: React.ReactNode
+}
 
 const Layout: FunctionComponent<PropTypes> = ({ children }) => {
   return (

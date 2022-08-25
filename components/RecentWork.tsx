@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 import Project from './Project'
 
-export type ProjectType = {
+export interface ProjectType {
   title: string
   description: string
   testimonial: string
@@ -9,13 +9,13 @@ export type ProjectType = {
   link: string
 }
 
-type PropTypes = {
+interface PropTypes {
   projects: ProjectType[]
 }
 
 const RecentWork: FunctionComponent<PropTypes> = ({ projects }) => {
   return (
-    <div className='flex flex-col xl:w-5/6 w-full 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 gap-12 min-w-full transition-all ease-linear duration-300'>
+    <div className='flex flex-col xl:w-5/6 w-full 2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8  gap-12 min-w-full transition-all ease-linear duration-300'>
       <h1 id="recent-work" className='text-black-90 md:text-h1 text-h1-mobile'>Recent Work</h1>
       <div className='flex justify-center flex-wrap gap-12'>
         {projects.map((project, index) => {

@@ -18,20 +18,20 @@ const MySkills: FunctionComponent = () => {
       <section className='flex flex-col items-center gap-6'>
         <h4 className='text-black-90 md:text-h4 text-h4-mobile'>The Tools I Use</h4>
         <ul className='flex flex-wrap gap-6 justify-center md:text-p text-p-mobile text-black-90'>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={reactLink} target='_blank'><SiReact/>React</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={nextLink} target='_blank'><SiNextdotjs/>NextJS</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={tailwindLink} target='_blank'><SiTailwindcss/>TailwindCSS</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={trpcLink} target='_blank'><SimpleIconsTrpc />tRPC</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={prismaLink} target='_blank'><SiPrisma/>Prisma</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={mysqlLink} target='_blank'><SiMysql/>MySQL</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={githubLink} target='_blank'><SiGithub/>GitHub</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={reactLink} target='_blank' rel="noreferrer"><SiReact/>React</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={nextLink} target='_blank' rel="noreferrer"><SiNextdotjs/>NextJS</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={tailwindLink} target='_blank' rel="noreferrer"><SiTailwindcss/>TailwindCSS</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={trpcLink} target='_blank' rel="noreferrer"><SimpleIconsTrpc />tRPC</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={prismaLink} target='_blank' rel="noreferrer"><SiPrisma/>Prisma</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={mysqlLink} target='_blank' rel="noreferrer"><SiMysql/>MySQL</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={githubLink} target='_blank' rel="noreferrer"><SiGithub/>GitHub</a></li>
         </ul>
       </section>
-      <section  className='flex flex-col items-center gap-6'>
+      <section className='flex flex-col items-center gap-6'>
         <h4 className='text-black-90 md:text-h4 text-h4-mobile'>The Languages I Speak</h4>
         <ul className='flex flex-wrap gap-6 justify-center md:text-p text-p-mobile text-black-90'>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={typescriptLink} target='_blank'><SiTypescript/>TypeScript</a></li>
-          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={pythonLink} target='_blank'><SiPython/>Python</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={typescriptLink} target='_blank' rel="noreferrer"><SiTypescript/>TypeScript</a></li>
+          <li><a className='flex flex-row gap-6 items-center hover:text-secondary transition-all duration-200' href={pythonLink} target='_blank' rel="noreferrer"><SiPython/>Python</a></li>
         </ul>
       </section>
     </div>
