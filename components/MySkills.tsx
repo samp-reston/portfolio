@@ -14,7 +14,7 @@ const MySkills: FunctionComponent = () => {
   const pythonLink: string = 'https://www.python.org/'
 
   return (
-    <div id="my-skills" className='flex min-w-full flex-col items-center gap-24 bg-white px-body py-32 transition-all duration-300 ease-linear'>
+    <div id="my-skills" className='flex min-w-full flex-col items-center gap-24 bg-white px-body py-32 text-center transition-all duration-300 ease-linear'>
       <section className='flex flex-col items-center gap-6'>
         <h4 className='text-h4-mobile text-black-90 md:text-h4'>The Tools I Use</h4>
         <ul className='flex flex-wrap justify-center gap-6 text-p-mobile text-black-90 md:text-p'>
