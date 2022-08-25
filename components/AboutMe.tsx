@@ -7,7 +7,7 @@ const AboutMe: FunctionComponent = () => {
       <p className='md:text-p text-p-mobile text-black-90 lg:w-5/6 md:w-full'>
         Hi, my name&#39;s Sam, I work at Jaguar Land Rover as an Electrical Degree Apprentice. Day-to-day I develop in-house solutions for enabling real-time Level 5 In-the-Loop testing.
         <br /><br />
-        In my extra time I develop fullstack web applications using React, TypeScript, TailwindCSS, and MySQL. I also believe in using built-in typesafety within applications to ensure the upmost security and maintainability.
+        In my extra time I develop fullstack web applications using <strong>React</strong>, <strong>TypeScript</strong>, <strong>TailwindCSS</strong>, and <strong>MySQL</strong>. I also believe in using built-in typesafety within applications to ensure the upmost <strong>security</strong> and <strong>maintainability</strong>.
         <br /><br />
         I&#39;m competively spirited, striving for perfection in every aspect. I have a passion for engineering and problem solving.
       </p>

@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 
 const Header: FunctionComponent = () => {
   return (
-    <header className='2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 pb-16 min-w-full transition-all ease-linear duration-300 '>
+    <header className='2xl:px-64 xl:px-64 lg:px-32 md:px-16 px-8 min-w-full transition-all ease-linear duration-300 '>
       <nav className='flex flex-row w-full'>
         <ul className='flex flex-row w-full items-center h-24 2xl:gap-16 xl:gap-14 lg:gap-16 sm:gap-8 sm:justify-start justify-center'>
           <li className='flex'>

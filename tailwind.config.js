@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '320px'
+      },
+      maxWidth: {
+        'project-image': ''
+      },
       fontFamily: {
         sans: ['Libre Franklin', ...defaultTheme.fontFamily.sans]
       },
@@ -63,6 +69,10 @@ module.exports = {
           lineHeight: '31.5px',
           fontWeight: 'regular'
         }],
+        testimonial: ['21px', {
+          lineHeight: '31.5px',
+          fontWeight: 'extra-light'
+        }],
         'h1-mobile': ['51px', {
           letterSpacing: '0.05em',
           fontWeight: 'bold'
@@ -90,6 +100,10 @@ module.exports = {
         'p-mobile': ['16.8px', {
           lineHeight: '31.5px',
           fontWeight: 'regular'
+        }],
+        'testimonial-mobile': ['16.8px', {
+          lineHeight: '31.5px',
+          fontWeight: 'extra-light'
         }]
       }
     }
