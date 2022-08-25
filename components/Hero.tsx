@@ -13,7 +13,7 @@ const Hero: FunctionComponent = () => {
         <p className='md:text-p text-p-mobile text-black-90 sm:w-3/5 w-full'>
           I&#39;m passionate about bringing safety to systems through <strong>cutting-edge technology</strong> with reliability built-in. All the while bringing your <strong>dreams to life</strong> through beautiful interfaces with <strong>user-experience</strong> at the forefront.
         </p>
-        <Image className='rounded-full shadow-lg m-4' src={portrait.src} alt='Samuel Preston' width={384} height={384} />
+        <Image className='rounded-full shadow-lg m-4' src={portrait.src} alt='Samuel Preston' width={384} height={384} quality={100}/>
       </div>
     </div>
   )
