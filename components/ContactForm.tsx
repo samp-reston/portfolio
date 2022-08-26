@@ -1,21 +1,55 @@
-import React, { FunctionComponent } from 'react'
+/* eslint-disable no-unused-vars */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { useState, FunctionComponent } from 'react'
+import { useFormspark } from '@formspark/use-formspark'
+import { useForm } from 'react-hook-form'
+import z from 'zod'
+
+export type SubmitContactForm = z.TypeOf<typeof submitContactForm>
+
+export const submitContactForm = z.object({
+  name: z.string().min(1),
+  email: z.string().email().min(1),
+  message: z.string().min(10)
+})
 
 const ContactForm: FunctionComponent = () => {
+  const { handleSubmit, register, formState: { errors, isSubmitted }, resetField } = useForm<SubmitContactForm>()
+  const [submit, submitting] = useFormspark({
+    formId: 'SdhXPyCc'
+  })
+
+  // const [message, setMessage] = useState('')
+
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  // const onSubmit = async (values: SubmitContactForm) => {
+  //   await submit(values)
+  // }
+
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  const onSubmit = (values: SubmitContactForm) => {
+    submit(values)
+    resetField('name')
+    resetField('email')
+    resetField('message')
+  }
+
   return (
-    <form className='flex grow flex-col gap-4 text-p-mobile md:text-p'>
+    // eslint-disable-next-line @typescript-eslint/no-misused-promises
+    <form onSubmit={handleSubmit(onSubmit)} className='flex grow flex-col gap-4 text-p-mobile md:text-p'>
       <div className='flex flex-col'>
         <label htmlFor="name">Name</label>
-        <input id="name" type="text" className='h-12 rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none '/>
+        <input id="name" type="text" {...register('name', { required: true })} className={`h-12 rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none ${(errors.name != null) ? 'border-error' : ''}`}/>
       </div>
       <div className='flex flex-col'>
         <label htmlFor="email">Email</label>
-        <input id="email" type="text" className='h-12 rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none'/>
+        <input id="email" type="text" {...register('email', { required: true })} className={`h-12 rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none ${(errors.email != null) ? 'border-error' : ''}`}/>
       </div>
       <div className='flex flex-col'>
         <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" cols={30} rows={7} className='rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none'></textarea>
+        <textarea id="message" cols={30} rows={7} {...register('message', { required: true })} className={`rounded-lg border-4 border-secondary bg-black-75 p-1 text-white focus:outline-none ${(errors.message != null) ? 'border-error' : ''}`}></textarea>
       </div>
-      <input type="submit" className='h-12 w-1/2 self-end rounded-lg border-4 border-secondary bg-black-75 p-1 text-white transition-all duration-200 hover:cursor-pointer hover:text-secondary focus:bg-black-5 focus:text-black-100 focus:outline-none ' value='Send'/>
+      <input type="submit" className={`h-12 w-1/2 self-end rounded-lg border-4 border-secondary bg-black-75 p-1 text-white transition-all duration-200 hover:cursor-pointer hover:text-secondary active:bg-black-5 active:text-black-100 active:outline-none ${isSubmitted ? 'border-green-500' : ''}`} value='Send'/>
     </form>
   )
 }
