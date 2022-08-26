@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
 // import { SiReact, SiNextdotjs, SiTailwindcss, SiPrisma, SiMysql, SiGithub, SiTypescript, SiPython } from 'react-icons/Si'
 import { SiReact } from '@react-icons/all-files/si/SiReact'
-import { SiNextDotJs } from '@react-icons/all-files/si/SiNextdotjs'
+import { SiNextDotJs } from '@react-icons/all-files/si/SiNextDotJs'
 import { SiTailwindcss } from '@react-icons/all-files/si/SiTailwindcss'
 import { SiMysql } from '@react-icons/all-files/si/SiMysql'
 import { SiGithub } from '@react-icons/all-files/si/SiGithub'
