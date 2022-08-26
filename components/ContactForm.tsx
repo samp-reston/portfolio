@@ -19,16 +19,9 @@ const ContactForm: FunctionComponent = () => {
     formId: 'SdhXPyCc'
   })
 
-  // const [message, setMessage] = useState('')
-
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  // const onSubmit = async (values: SubmitContactForm) => {
-  //   await submit(values)
-  // }
-
-  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-  const onSubmit = (values: SubmitContactForm) => {
+  const onSubmit = (values: SubmitContactForm): void => {
     submit(values)
+      .catch((err) => console.log(err))
     resetField('name')
     resetField('email')
     resetField('message')
