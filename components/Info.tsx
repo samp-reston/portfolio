@@ -1,5 +1,7 @@
 import React, { FunctionComponent } from 'react'
-import { SiGithub, SiLinkedin, SiTwitter } from 'react-icons/Si'
+import { SiGithub } from '@react-icons/all-files/si/SiGithub'
+import { SiLinkedin } from '@react-icons/all-files/si/SiLinkedin'
+import { SiTwitter } from '@react-icons/all-files/si/SiTwitter'
 
 const Info: FunctionComponent = () => {
   const email: string = 'samp.reston@outlook.com'
