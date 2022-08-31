@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import React, { Fragment, FunctionComponent, useState } from 'react'
 import { getHeroContent, getHeroImage } from '../api/cdn'
-import portrait from '../assets/portrait.webp'
 import { ParseContent } from '../utils/utils'
 
 import { useQuery } from 'react-query'
