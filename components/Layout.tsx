@@ -9,7 +9,7 @@ interface PropTypes {
 
 const Layout: FunctionComponent<PropTypes> = ({ children }) => {
   return (
-    <div className="flex min-h-screen flex-col items-start break-words bg-gradient-to-b from-primary to-base pb-16">
+    <div className="flex min-h-screen flex-col items-center break-words bg-gradient-to-b from-primary to-base pb-16">
       <Header />
       <main>{children}</main>
       <Footer />
