@@ -11,7 +11,7 @@ const Home: NextPage = () => {
     <div id="body" className='flex flex-col items-start gap-28'>
       <Head>
         <title>Sam Preston | Web Developer</title>
-        <meta name="description" content="Samuel Preston | Fullstack Web Developer | Creating secure and beautiful websites with cutting-edge technology while maintaining user-experience." />
+        <meta name="description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta httpEquiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <meta name='viewport' content="width=device-width, initial-scale=1" />
@@ -20,6 +20,14 @@ const Home: NextPage = () => {
         <meta name="robots" content="index, follow"/>
         <meta name="googlebot" content="index, follow"/>
         <meta name="geo.region" content="GB-BIR"/>
+        <meta property="og:title" content="Sam Preston | Web Developer" />
+        <meta property="og:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
+        <meta property="og:image" content="/favicon.ico" />
+        <meta property="og:url" content="/favicon.ico" />
+        <meta name="twitter:title" content="Sam Preston | Web Developer" />
+        <meta name="twitter:description" content="Samuel Preston | Fullstack Web Developer | I'm passionate about bringing safety to systems through cutting-edge technology with reliability built-in. All the while bringing your dreams to life through beautiful interfaces with user-experience at the forefront." />
+        <meta name="twitter:url" content="/favicon.ico" />
+        <meta name="twitter:card" content="Samuel Preston | Fullstack Web Developer" />
       </Head>
       <Hero />
       <MySkills />
