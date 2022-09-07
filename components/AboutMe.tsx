@@ -3,7 +3,7 @@ import React, { FunctionComponent } from 'react'
 const AboutMe: FunctionComponent = () => {
   return (
     <div className='flex min-w-full flex-col gap-12 px-body pb-16 transition-all duration-300 ease-linear'>
-      <h1 id="about-me" className='text-h1-mobile text-black-90 md:text-h1'>About Me</h1>
+      <h2 id="about-me" className='text-h2-mobile text-black-90 md:text-h2'>About Me</h2>
       <p className='text-p-mobile text-black-90 md:w-full md:text-p lg:w-5/6'>
         Hi, my name&#39;s Sam, I work at Jaguar Land Rover as an Electrical Degree Apprentice. Day-to-day I develop in-house solutions for enabling real-time Level 5 In-the-Loop testing.
         <br /><br />
